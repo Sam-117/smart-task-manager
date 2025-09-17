@@ -2,39 +2,39 @@
 
 ## Project Overview
 
-**Smart Task Manager** is an intelligent productivity application designed to help individuals and teams efficiently organize, prioritize, and track their tasks. The app leverages AI to automate routine planning, provide smart suggestions, and streamline workflow management. It is ideal for students, professionals, and organizations seeking to boost productivity and reduce manual overhead in task management.
+**Smart Task Manager** is a modern to-do app that helps individuals and teams efficiently organize, prioritize, and track their tasks. With real-time updates, secure authentication, and a clean, responsive interface, it streamlines daily productivity. This app is ideal for students, professionals, and anyone looking to manage tasks smarter and faster.
 
 ---
 
 ## Tech Stack
 
-- **Frontend:** React.js (with TypeScript)
-- **Backend / Database:** Supabase (PostgreSQL, Auth, Real-time)
+- **Frontend:** Next.js (React)
+- **Backend:** Supabase (PostgreSQL + Auth)
 - **Styling:** Tailwind CSS
-- **AI Tools:** Gemini CCL, GitHub Copilot
+- **Hosting:** Vercel (frontend), Supabase (backend)
+- **Tools:** GitHub, VS Code
 
 ---
 
 ## AI Integration Strategy
 
-AI will be integrated throughout the development lifecycle and within the application itself:
-
-- **Code Generation**
-  - Use AI tools (e.g., GitHub Copilot, Gemini CCL) to scaffold React components, Supabase API calls, and utility functions.
-  - Accelerate boilerplate code creation and enforce best practices.
-
-- **Testing Support**
-  - Generate unit and integration tests for frontend modules and Supabase interactions using AI-assisted suggestions.
-  - Improve test coverage and reliability with context-aware test case generation.
-
-- **Documentation**
-  - Employ AI to generate and maintain docstrings, inline comments, and keep the README up to date.
-  - Ensure clear, consistent, and comprehensive documentation across the codebase.
-
-- **Context-Aware Techniques**
-  - Feed Supabase API specifications, file tree structures, and code diffs into AI tools to generate relevant code, tests, and documentation.
-  - Use AI to analyze project context and provide tailored development suggestions.
+- **Code Generation:**  
+  Use AI tools to scaffold components and CRUD logic for rapid development.
+- **Testing:**  
+  Generate unit and integration tests with AI to ensure code reliability.
+- **Documentation:**  
+  Leverage AI for docstrings, inline comments, and keeping the README up to date.
+- **Context-Aware Prompts:**  
+  Utilize file trees, diffs, and API specs to generate relevant code and documentation.
 
 ---
 
-*This README will be continuously updated as the project evolves.*
+## Features
+
+- [x] User authentication (Supabase Auth)
+- [x] Create, edit, and delete tasks (CRUD)
+- [x] Mark tasks as complete/incomplete
+- [x] Responsive design for all devices
+
+---
+
