@@ -11,7 +11,7 @@
 - **Frontend:** React.js (with TypeScript)
 - **Backend / Database:** Supabase (PostgreSQL, Auth, Real-time)
 - **Styling:** Tailwind CSS
-- **AI Tools:** OpenAI API, GitHub Copilot
+- **AI Tools:** Gemini CCL, GitHub Copilot
 
 ---
 
@@ -20,7 +20,7 @@
 AI will be integrated throughout the development lifecycle and within the application itself:
 
 - **Code Generation**
-  - Use AI tools (e.g., GitHub Copilot) to scaffold React components, Supabase API calls, and utility functions.
+  - Use AI tools (e.g., GitHub Copilot, Gemini CCL) to scaffold React components, Supabase API calls, and utility functions.
   - Accelerate boilerplate code creation and enforce best practices.
 
 - **Testing Support**
