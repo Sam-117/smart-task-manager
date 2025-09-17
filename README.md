@@ -11,7 +11,7 @@
 - **Frontend:** Next.js (React)
 - **Backend:** Supabase (PostgreSQL + Auth)
 - **Styling:** Tailwind CSS
-- **Hosting:** Vercel (frontend), Supabase (backend)
+- **Hosting:** GitHub Pages (static export), Supabase (backend)
 - **Tools:** GitHub, VS Code
 
 ---
