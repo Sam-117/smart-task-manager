@@ -9,9 +9,8 @@
 ## Tech Stack
 
 - **Frontend:** React.js (with TypeScript)
-- **Backend:** Node.js (Express.js)
+- **Backend / Database:** Supabase (PostgreSQL, Auth, Real-time)
 - **Styling:** Tailwind CSS
-- **Database:** MongoDB (Mongoose ODM)
 - **AI Tools:** OpenAI API, GitHub Copilot
 
 ---
@@ -21,11 +20,11 @@
 AI will be integrated throughout the development lifecycle and within the application itself:
 
 - **Code Generation**
-  - Use AI tools (e.g., GitHub Copilot) to scaffold React components, backend routes, and utility functions.
+  - Use AI tools (e.g., GitHub Copilot) to scaffold React components, Supabase API calls, and utility functions.
   - Accelerate boilerplate code creation and enforce best practices.
 
 - **Testing Support**
-  - Generate unit and integration tests for frontend and backend modules using AI-assisted suggestions.
+  - Generate unit and integration tests for frontend modules and Supabase interactions using AI-assisted suggestions.
   - Improve test coverage and reliability with context-aware test case generation.
 
 - **Documentation**
@@ -33,7 +32,7 @@ AI will be integrated throughout the development lifecycle and within the applic
   - Ensure clear, consistent, and comprehensive documentation across the codebase.
 
 - **Context-Aware Techniques**
-  - Feed API specifications, file tree structures, and code diffs into AI tools to generate relevant code, tests, and documentation.
+  - Feed Supabase API specifications, file tree structures, and code diffs into AI tools to generate relevant code, tests, and documentation.
   - Use AI to analyze project context and provide tailored development suggestions.
 
 ---
