@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Sam-117/smart-task-manager#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "@supabase/supabase-js": "^2.45.4"
   }
 }

@@ -87,6 +87,7 @@ Notes:
 
 Environment variables:
 - `PORT` (optional): port for the HTTP server. Default: `3000`.
+- `SUPABASE_URL` and `SUPABASE_ANON_KEY` (required for Supabase backend)
 
 Run with a custom port:
 ```bash
