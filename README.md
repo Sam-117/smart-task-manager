@@ -1,36 +1,132 @@
 # 🔖 Smart Task Manager
 
-## Project Title & Description
+Smart Task Manager is a minimal Node.js/Express service for creating and managing tasks. It exposes a simple REST API with in-memory storage, suitable for demos, prototypes, and backend integration exercises.
 
-**Smart Task Manager** is a task management app designed for students, professionals, and teams to efficiently organize, prioritize, and track their tasks. Effective task management is essential for boosting productivity, meeting deadlines, and reducing stress—whether you’re working solo or collaborating with others. This app provides a clean, responsive interface and real-time updates to help users stay on top of their goals.
+---
+
+## ✨ Features
+
+- Basic task CRUD endpoints (list, create, delete)
+- In-memory store for simplicity (no database required)
+- JSON request/response
+- Clear, modular structure (`api/` for routes, `src/` for server)
+
+---
+
+## 🧱 Project Structure
+
+```
+smart-task-manager/
+├── api/
+│   └── tasks.js           # Express router (GET/POST/DELETE)
+├── docs/
+│   ├── README.md
+│   └── reflection.md
+├── src/
+│   └── server.js          # Express app mounting tasks router
+├── package.json
+└── README.md
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript (deployed on GitHub Pages)
-- **Backend:** Supabase (authentication + CRUD operations)
-- **Hosting:** GitHub Pages
-- **Version Control:** Git + GitHub
-- **AI Tools:** CodeRabbit in VS Code
+- **Runtime:** Node.js (LTS recommended)
+- **Web Framework:** Express.js 4
+- **Language:** JavaScript (CommonJS)
 
 ---
 
-## 🧠 AI Integration Strategy
+## 🚀 Setup & Run
 
-- **Code Generation:**  
-  Use AI tools to scaffold UI components and helper functions for Supabase integration.
-- **Testing Support:**  
-  Generate unit test stubs and integration test ideas with AI assistance.
-- **Documentation:**  
-  Leverage AI for writing docstrings, inline comments, and maintaining the README.
-- **Context-Aware Workflows:**  
-  Feed file trees, Supabase schema, and code diffs into AI prompts for smarter code and documentation generation.
+Prerequisites:
+- Node.js 18+ (LTS) and npm
+
+Install dependencies:
+```bash
+npm install
+```
+
+Start the server:
+```bash
+npm run start
+# or
+node src/server.js
+```
+
+Server runs at:
+```
+http://localhost:3000
+```
 
 ---
 
-## ⚠️ Deployment Note
+## 🔌 API Endpoints
 
-> **GitHub Pages only supports static hosting.**  
-> All dynamic features (authentication, CRUD operations) are handled client-side using Supabase.  
-> For full Next.js support (including server-side rendering and API routes), consider deploying to [Vercel](https://vercel.com/) in the future.
+Base URL: `http://localhost:3000`
+
+- GET `/api/tasks`
+  - Response: `{ "tasks": [{ id, title, done }] }`
+
+- POST `/api/tasks`
+  - Body: `{ "title": "My task" }`
+  - Response (201): `{ "task": { id, title, done } }`
+
+- DELETE `/api/tasks/:id`
+  - Response: `{ "task": { id, title, done } }`
+  - 404 if not found
+
+Notes:
+- Storage is in-memory and resets on restart.
+- `Content-Type: application/json` required for POST.
+
+---
+
+## ⚙️ Configuration
+
+Environment variables:
+- `PORT` (optional): port for the HTTP server. Default: `3000`.
+
+Run with a custom port:
+```bash
+PORT=4000 npm run start
+```
+
+---
+
+## 🧪 Development
+
+- Start (prod): `npm run start`
+- Start (basic dev): `npm run dev` (same as start; swap for nodemon if desired)
+
+Suggested improvement:
+```bash
+npm install --save-dev nodemon
+```
+Then add: `"dev": "nodemon src/server.js"`
+
+---
+
+## 🧠 AI Usage Notes
+
+- **Code scaffolding:** Generate boilerplate routes, validation helpers, and docs.
+- **Refactors:** Propose modularization (e.g., services layer, DTOs) and add tests.
+- **Docs:** Keep README and `docs/` up to date, including API examples.
+- **Guardrails:** Avoid leaking secrets; review generated code for security/perf.
+
+---
+
+## 🗺️ Roadmap
+
+- Add persistence (SQLite/Postgres) and a data access layer
+- Add PUT/PATCH for updates
+- Add request validation (Joi/Zod)
+- Add unit/integration tests (Jest/Supertest)
+- Add CORS and rate limiting
+
+---
+
+## 📄 License
+
+MIT (see `LICENSE` if present)

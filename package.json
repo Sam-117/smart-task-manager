@@ -1,0 +1,25 @@
+{
+  "name": "smart-task-manager",
+  "version": "1.0.0",
+  "description": "**Smart Task Manager** is a task management app designed for students, professionals, and teams to efficiently organize, prioritize, and track their tasks. Effective task management is essential for boosting productivity, meeting deadlines, and reducing stress—whether you’re working solo or collaborating with others. This app provides a clean, responsive interface and real-time updates to help users stay on top of their goals.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sam-117/smart-task-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sam-117/smart-task-manager/issues"
+  },
+  "homepage": "https://github.com/Sam-117/smart-task-manager#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
